@@ -1,0 +1,16 @@
+{
+  "name": "Mossby Village",
+  "short_name": "Mossby",
+  "description": "Pitch a tent, merge your way to a skyline. A cosy village builder.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#7cc8f2",
+  "theme_color": "#7cc8f2",
+  "categories": ["games"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

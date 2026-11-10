@@ -1,0 +1,57 @@
+<div id="game">
+  <canvas id="world" aria-label="Your village. Drag matching buildings together to merge them."></canvas>
+
+  <div id="ui">
+    <header id="hud">
+      <div class="panel coins" title="Coins">
+        <i class="coin"></i>
+        <div><b id="coins">0</b><small id="rate">0/s</small></div>
+      </div>
+      <div class="panel rank">
+        <div class="rank-row"><b id="rankName">Camp</b><span id="popTxt"></span></div>
+        <div class="bar"><i id="popBar"></i></div>
+      </div>
+      <button id="gear" class="panel" aria-label="Settings" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>
+      </button>
+    </header>
+
+    <footer id="dock">
+      <div id="hint" role="status" hidden></div>
+      <div class="ups">
+        <button id="upSpawn" class="up"><b>Better builders</b><small id="upSpawnSub"></small><span class="cost"><i class="coin sm"></i><span id="upSpawnCost"></span></span></button>
+        <button id="upMarket" class="up"><b id="upMarketName">Market day</b><small>+25% coins from every home</small><span class="cost"><i class="coin sm"></i><span id="upMarketCost"></span></span></button>
+      </div>
+      <button id="build">
+        <canvas id="buildPrev" width="108" height="108"></canvas>
+        <span class="lbl"><b id="buildName">Build Tent</b><small id="buildSub"></small></span>
+        <span class="cost"><i class="coin sm"></i><span id="buildCost"></span></span>
+      </button>
+    </footer>
+  </div>
+
+  <div id="menu" class="panel" hidden>
+    <button id="soundBtn">Sound: on</button>
+    <button id="resetBtn" class="danger">Start a new village</button>
+  </div>
+
+  <div id="toast" class="panel" hidden>
+    <canvas id="toastPrev" width="92" height="92"></canvas>
+    <div><small>New building</small><b id="toastName"></b></div>
+  </div>
+
+  <div id="rankup" hidden>
+    <small id="rankupTop"></small>
+    <b id="rankupName"></b>
+    <span id="rankupSub"></span>
+  </div>
+
+  <div id="away" hidden>
+    <div class="panel">
+      <h2>Welcome back!</h2>
+      <p id="awayTxt"></p>
+      <div class="sum"><i class="coin"></i><span id="awaySum"></span></div>
+      <button id="awayOk">Collect</button>
+    </div>
+  </div>
+</div>

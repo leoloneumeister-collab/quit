@@ -1,0 +1,21 @@
+{
+  "name": "mossby-village",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A cosy merge-and-build village game for Android.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "serve": "npx --yes serve www",
+    "android:sync": "npm run build && npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0"
+  },
+  "devDependencies": {
+    "@fontsource/baloo-2": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0"
+  }
+}

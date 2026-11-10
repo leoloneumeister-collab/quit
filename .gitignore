@@ -1,0 +1,6 @@
+node_modules/
+# built from src/ by `npm run build`
+www/index.html
+www/style.css
+www/game.js
+www/fonts/

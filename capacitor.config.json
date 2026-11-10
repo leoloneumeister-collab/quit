@@ -1,0 +1,7 @@
+{
+  "appId": "app.mossby.village",
+  "appName": "Mossby Village",
+  "webDir": "www",
+  "backgroundColor": "#7cc8f2",
+  "android": { "backgroundColor": "#7cc8f2" }
+}
